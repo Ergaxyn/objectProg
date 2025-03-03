@@ -6,4 +6,5 @@ public class Segment {
     {
         return Math.hypot(a.x - b.x, a.y - b.y);
     }
+    //next
 }
