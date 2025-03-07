@@ -1,9 +1,21 @@
 public class Segment {
-    public Point a = new Point();
-    public Point b = new Point();
+    private Point a;
+    private Point b;
 
-    public double length()
-    {
-        return Math.hypot(a.x - b.x, a.y - b.y);
+    public Segment(Point a, Point b) {
+        this.a = new Point(a);
+        this.b = new Point(b);
+    }
+
+    @Override
+    public String toString() {
+        return "Segment{" +
+                "a=" + a +
+                ", b=" + b +
+                '}';
+    }
+
+    public double length(){
+        return Math.hypot(a.getX()-b.getX(), a.getY()-b.getY());
     }
 }
